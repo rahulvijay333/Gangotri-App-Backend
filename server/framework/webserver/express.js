@@ -6,6 +6,7 @@ import userRouter from './routes/user.js'
 import authRouter from './routes/auth.js'
 import dotenv from 'dotenv';
 import classRouter from './routes/class/class.js'
+import subjectRouter from './routes/subjects/subjects.js'
 
 
 export default function expressConfig(app) {
@@ -23,6 +24,7 @@ export default function expressConfig(app) {
   app.use('/api', userRouter)
   app.use('/api',authRouter)
   app.use('/api/class',classRouter)
+  app.use('/api/subject',subjectRouter)
   
 
 

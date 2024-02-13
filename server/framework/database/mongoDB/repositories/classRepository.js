@@ -25,5 +25,5 @@ export default function classRepositoryMongo(){
 
     return{
         addClass,
-        findByProperty    }
+        findByProperty}
 }
